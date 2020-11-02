@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Delegation</title>
+  </head>
+  <body>
+    <ul id="hello">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ul>
+    <script>
+      const hello = document.getElementById('hello')
+      hello.addEventListener(
+        'click',
+        (event) => {
+          console.log(event.target.innerText)
+        },
+        false
+      )
+    </script>
+  </body>
+</html>
