@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling & Capture</title>
+  </head>
+  <body>
+    <div id="hello" style="width: 100px; height: 100px; background-color: red">Click Me!</div>
+    <script>
+      window.addEventListener('click', () => console.log('Document Capture Click'), true)
+      document.documentElement.addEventListener(
+        'click',
+        () => {
+          console.log('HTML Capture Click')
+        },
+        true
+      )
+      let hello = document.getElementById('hello')
+      hello.addEventListener('click', () => console.log('Element Capture Click'), true)
+      hello.addEventListener('click', () => console.log('Element Bubbling Click'))
+      window.addEventListener('click', () => console.log('Document Bubbling Click'))
+      document.documentElement.addEventListener('click', () => console.log('HTML Bubbling Click'))
+    </script>
+  </body>
+</html>
