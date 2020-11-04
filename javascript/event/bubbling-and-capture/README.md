@@ -1,5 +1,7 @@
 # Event Bubbling & Capture
 
+> [原题](https://h5bp.org/Front-end-Developer-Interview-Questions/translations/chinese/#js-questions)
+
 ## Event Bubbling
 
 事件冒泡，最早为 IE 定义，事件从最具体的元素开始触发，然后向上传播至文档，自底向上。

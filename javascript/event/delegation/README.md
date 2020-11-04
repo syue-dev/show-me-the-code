@@ -1,5 +1,7 @@
 # Event Delegation
 
+> [原题](https://h5bp.org/Front-end-Developer-Interview-Questions/translations/chinese/#js-questions)
+
 ## 介绍
 
 事件委托基于冒泡，当需要在大量子元素上绑定某一事件时，可以将事件绑定在子元素的父元素，通过冒泡机制在 `event.target` 上找到对应匹配的子元素。
